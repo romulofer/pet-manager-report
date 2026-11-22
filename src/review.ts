@@ -1,12 +1,5 @@
 // Content taken from README.md and REPORT.md of the backend project.
 
-export const stats = [
-	{ value: '78', label: 'tests', note: 'up from 9 (56 integration, 22 end-to-end)' },
-	{ value: '60 → 4', label: 'known vulnerabilities', note: 'the remaining 4 do not look reachable' },
-	{ value: '97%', label: 'line coverage', note: '88% of branches' },
-	{ value: '5', label: 'commits', note: 'in reading order' }
-];
-
 export const changes = [
 	{
 		problem: 'Failures looked like successes',
@@ -38,6 +31,13 @@ export const changes = [
 		detail: 'The developer notes described a JPA/H2 setup that does not exist; only 9 tests.',
 		fix: 'Docs rewritten to match the code (the original notes were kept); 78 tests.'
 	}
+];
+
+export const stats = [
+	{ value: '78', label: 'tests', note: 'up from 9 (56 integration, 22 end-to-end)' },
+	{ value: '60 → 4', label: 'known vulnerabilities', note: 'the remaining 4 do not look reachable' },
+	{ value: '97%', label: 'line coverage', note: '88% of branches' },
+	{ value: String(changes.length), label: 'problems fixed', note: 'listed below' }
 ];
 
 export const behaviorChanges = [
